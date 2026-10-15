@@ -141,11 +141,16 @@ function goFullscreen() {
             } else if (value === 'drive') {
               document.title = 'Google Drive';
               favicon.href = 'https://drive.google.com/favicon.ico';
+            } else if (value === 'deltamath') {
+              document.title = 'DeltaMath';
+              favicon.href = 'https://www.deltamath.com/favicon.ico';
             } else if (value === 'docs') {
               document.title = 'Google Docs';
               favicon.href = 'https://docs.google.com/favicon.ico';
             } else {
-            favicon.href = '../../favicon.ico';
+            // default: look like DeltaMath while playing
+            document.title = 'DeltaMath';
+            favicon.href = 'https://www.deltamath.com/favicon.ico';
         }
     })();
 </script>
